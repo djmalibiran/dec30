@@ -103,6 +103,21 @@ register_nav_menus( array(
 	'footer_menu'  => __( 'Footer Menu', 'text_domain' ),
 ) );
 
+// Custom Logo
+add_theme_support( 'custom-logo' );
+
+function dec30_custom_logo_setup() {
+	$defaults = array(
+		'height'               => 100,
+		'width'                => 400,
+		'flex-height'          => true,
+		'flex-width'           => true,
+		'header-text'          => array( 'site-title', 'site-description' ),
+		'unlink-homepage-logo' => true, 
+	);
+	add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'dec30_custom_logo_setup' );
 
 // remove hidden SVGs
 remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
