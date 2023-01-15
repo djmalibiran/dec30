@@ -36,8 +36,5 @@ if( get_field('test_f_label') ): ?>
     <h2><?php the_field('test_f_label'); ?></h2>
 <?php endif;
 
-?><h2>hello</h2>
-<?php
-
 get_footer();
 ?>

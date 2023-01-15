@@ -3,7 +3,7 @@
 <html <?php language_attributes(); ?>>
 
     <head>
-
+        
         <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css?ver=6.1.1" as="style" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -19,7 +19,6 @@
 		<?php
 		wp_body_open();
 		?>
-
         <header id="site-header" class="header-footer-group">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
